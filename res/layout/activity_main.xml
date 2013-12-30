@@ -17,11 +17,17 @@
       android:background="@android:color/transparent"
       />
 
-<!--   <Button -->
-<!--     android:id="@+id/button_capture" -->
-<!--     android:text="Capture" -->
-<!--     android:layout_width="wrap_content" -->
-<!--     android:layout_height="wrap_content" -->
-<!--     android:layout_gravity="center" -->
-<!--     /> -->
+  <Button
+      android:id="@+id/button_capture"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_gravity="center"
+      android:background="@android:color/transparent"
+      android:padding="10dp"
+      android:text="Capture"
+      android:textSize="30sp"
+      android:textColor="@android:color/white" />
+
 </RelativeLayout>

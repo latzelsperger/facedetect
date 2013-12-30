@@ -12,7 +12,6 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.hardware.Camera;
 import android.hardware.Camera.CameraInfo;
-import android.util.Log;
 import android.view.View;
 
 /**
@@ -48,8 +47,11 @@ class CameraOverlayCanvas extends View {
 				public void update(Observable observable, Object data) {
 					if (data instanceof Rect) {
 						mRect = correctRotation((Rect) data);
-						Log.d(getClass().getSimpleName(), "face: " + " Location X: " + mRect.centerX() + " Y: " + mRect.centerY() + " W: "
-								+ (mRect.right - mRect.left) + " H: " + (mRect.bottom - mRect.top));
+						// Log.d(getClass().getSimpleName(), "face: " +
+						// " Location X: " + mRect.centerX() + " Y: " +
+						// mRect.centerY() + " W: "
+						// + (mRect.right - mRect.left) + " H: " + (mRect.bottom
+						// - mRect.top));
 						invalidate();
 
 					}
