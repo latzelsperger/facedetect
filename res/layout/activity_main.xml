@@ -26,7 +26,7 @@
       android:layout_gravity="center"
       android:background="@android:color/transparent"
       android:padding="10dp"
-      android:text="Capture"
+      android:text="[  Capture  ]"
       android:textSize="30sp"
       android:textColor="@android:color/white" />
 

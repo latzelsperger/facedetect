@@ -22,6 +22,7 @@ import android.os.Environment;
 import android.util.Log;
 import android.view.Display;
 import android.view.Surface;
+import android.widget.Toast;
 
 /**
  * Utility class the instantiates and releases the camera (front or back),
@@ -246,6 +247,7 @@ public class CameraProvider {
 		mediaScanIntent.setData(contentUri);
 
 		mContext.sendBroadcast(mediaScanIntent);
-
+		Toast.makeText(mContext, "Picture saved!", Toast.LENGTH_SHORT).show();
+		getCamera().startPreview();
 	}
 }
